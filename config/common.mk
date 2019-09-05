@@ -72,9 +72,9 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/privapp-permissions-express-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-express.xml \
     vendor/lineage/config/permissions/privapp-permissions-express-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-express.xml
 
-# Enforce privapp-permissions whitelist
+# Log privapp-permissions whitelist violations
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.control_privapp_permissions=enforce
+    ro.control_privapp_permissions=log
 
 # Include AOSP audio files
 include vendor/lineage/config/aosp_audio.mk
