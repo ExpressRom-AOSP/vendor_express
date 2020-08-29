@@ -1,7 +1,7 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
-PRODUCT_BRAND ?= LineageOS
+PRODUCT_BRAND ?= ExpressRom
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -191,7 +191,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
-PRODUCT_VERSION_MAJOR = 17
+PRODUCT_VERSION_MAJOR = 0
 PRODUCT_VERSION_MINOR = 1
 PRODUCT_VERSION_MAINTENANCE := 0
 
