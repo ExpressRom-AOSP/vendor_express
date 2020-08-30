@@ -68,7 +68,9 @@ PRODUCT_COPY_FILES += \
 
 # This is Lineage!
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/org.lineageos.android.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.android.xml
+    vendor/lineage/config/permissions/org.lineageos.android.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.android.xml \
+    vendor/lineage/config/permissions/privapp-permissions-express-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-express.xml \
+    vendor/lineage/config/permissions/privapp-permissions-express-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-express.xml
 
 # Enforce privapp-permissions whitelist
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -120,6 +122,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageThemesStub \
     ThemePicker
+
+# Additional features
+PRODUCT_PACKAGES += \
+    StitchImage
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
